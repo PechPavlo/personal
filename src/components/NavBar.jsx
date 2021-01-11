@@ -10,7 +10,7 @@ function NavBar() {
             Home
           </NavLink>
           <NavLink activeClassName="text-red" to="/about">About</NavLink>
-          <NavLink activeClassName="text-red" to="/portfolio">Portfolio</NavLink>
+          <NavLink activeClassName="text-red" to="/projects">Projects</NavLink>
           <NavLink activeClassName="text-red" to="/contacts">Contacts</NavLink>
         </nav>
       </div>

@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import About from './components/About';
+import About from './components/about/About';
 import Contacts from './components/Contacts';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
-import Portfolio from './components/Portfolio';
+import Projects from './components/projects/Projects';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route component={About} path="/about" />
         <Route component={Contacts} path="/contacts" />
         <Route component={Home} path="/" exact />
-        <Route component={Portfolio} path="/portfolio" />
+        <Route component={Projects} path="/projects" />
       </Switch>
     </BrowserRouter>
   );
