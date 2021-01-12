@@ -39,7 +39,7 @@ function Projects() {
   // console.log(!isLoading ? projectsData[0].slug.current : 'df');
   return (
     <section className="projects">
-      <h1>Projects!!!</h1>
+      <h1>Here are some of my projects!!!</h1>
       <ul className="projects_list">
         {projectsData && projectsData.map((project) => (
           <li
@@ -55,6 +55,9 @@ function Projects() {
                 <span className="project_about-title">{project.title}</span>
                 <span className="project_about-subtitle">{project.subTitle}</span>
                 <span className="project-discrib">{project.description}</span>
+                <ul className="project_stack-list">
+                  {project.stack.map((techn) => <li className="project_stack" key="techn._id">{techn.title}</li>)}
+                </ul>
                 <a
                   className="project-link"
                   href={project.projectUrl}
