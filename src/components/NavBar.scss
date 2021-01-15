@@ -1,3 +1,5 @@
+@import '../assets/style/colors.scss';
+
 .nav_bar-header{
     width: 100%;
     height: 10rem;
@@ -21,13 +23,15 @@
             font-weight: 500;
             text-transform: lowercase;
             font-family: 'Poppins', sans-serif;
+            transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1.5);
             &:hover{
-                color: #fc1a14;
+                color: $btn_hover-color;
+                transform: scale(1.15);
             }
         }
         .nav_link-active{
             color: #fd4b46;
-            border-bottom: 3px solid #fc1a14;
+            border-bottom: 3px solid $btn_hover-color;
         }
     }
 }

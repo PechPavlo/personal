@@ -15,13 +15,13 @@ function Projects() {
       slug,
       mainImage{
         asset->{
-          _id,
+          "id": _id,
           url
         },
         alt
       },
       "stack": categories[]->{
-        _id,
+        "id": _id,
         title},
       description,
       projectUrl
@@ -56,7 +56,7 @@ function Projects() {
                 <span className="project_about-subtitle">{project.subTitle}</span>
                 <span className="project-discrib">{project.description}</span>
                 <ul className="project_stack-list">
-                  {project.stack.map((techn) => <li className="project_stack" key="techn._id">{techn.title}</li>)}
+                  {project.stack.map((techn) => <li className="project_stack" key={techn.id}>{techn.title}</li>)}
                 </ul>
                 <a
                   className="project-link"
@@ -64,7 +64,7 @@ function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  SEE WEBSITE
+                  see website
                 </a>
               </div>
             </div>
