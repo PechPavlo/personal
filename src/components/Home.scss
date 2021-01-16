@@ -4,7 +4,6 @@
     background-image : linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../assets/images/imac2.jpg');
     background-repeat: no-repeat;
     background-size  : cover;
-    // opacity: 0.5;
     min-height       : calc(100vh - 10rem);
     // background : radial-gradient( rgba(255, 255, 0, 0.808), wheat 50%);
     // background: -webkit-linear-gradient(45deg, lime, yellow, deeppink);
@@ -72,23 +71,14 @@
             margin              : 0 0 16px;
             font-style          : italic;
             font-family         : "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            // text-align       : center;
-            // font-weight      : 400;
-            // font-size        : 1rem;
-            // letter-spacing   : .15em;
-            // // text-transform: uppercase;
-            // font-family      : "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            // color            : dimgray;
-            // margin-bottom    : 1rem;
-            // line-height      : 1.5;
             border-bottom: 2px solid $primary-color;
         }
         .home_link {
             color             : #fff;
             background        :$btn-color;
             border            : 1px solid$btn-color;
-            width             : 124px;
-            height: 34px;
+            width             : 115px;
+            height: 29px;
             margin-bottom: 0.5rem;
             display           : flex;
             align-items: center;

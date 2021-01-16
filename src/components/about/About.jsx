@@ -36,18 +36,22 @@ function About() {
 
   return (
     <div className="about">
-      <h1>About!!!</h1>
-      <img className="about_img" src={pavlo} alt="Pavlo" />
-      <span className="about-discribtion">
-        I am a Junior JavaScript Front-End developer.
-      </span>
-      <span className="about-discribtion">
-        I am going to start working as a Junior Front-End Developer in IT product this year.
-      </span>
-      <span className="about-discribtion">
-        My goal to be in a space, where people do huge useful things and make high demands on
-        themselves.
-      </span>
+      <div className="about_container">
+        <img className="about_img" src={pavlo} alt="Pavlo" />
+        <div className="about_discribtion">
+          <h1>ABOUT ME</h1>
+          <span className="about_discribtion-item">
+            I&#39;m a Junior Front-End developer.
+          </span>
+          <span className="about_discribtion-item">
+            I&#39;m going to start working as a Junior Front-End Developer in IT product this year.
+          </span>
+          <span className="about_discribtion-item">
+            My goal to be in a space, where people do huge useful things and make high demands on
+            themselves.
+          </span>
+        </div>
+      </div>
     </div>
   );
 }

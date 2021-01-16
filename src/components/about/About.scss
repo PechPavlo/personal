@@ -1,8 +1,47 @@
 .about{
-    background: -webkit-linear-gradient(45deg, deeppink, yellow, lime);
+    // background: -webkit-linear-gradient(45deg, deeppink, yellow, lime);
+    background-image : url('../../assets/images/back_from_apple.jpg');
+    // background-image : linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../assets/images/basck_from_apple.jpg');
+    background-repeat: no-repeat;
+    background-size  : 100% 100%;
+    min-height       : calc(100vh - 10rem);
     min-height: calc(100vh - 10rem);
 }
 .about_img{
-    width: 200px;
-    
-}
+    width: 400px;
+    border-radius: 10px;
+    margin: 3rem;
+    }
+
+    .about_container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 2rem;
+        padding-top: 4rem;
+        color: ivory;
+        font-family         : "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .about_discribtion{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1{
+            margin-bottom: 1rem;
+        }
+    }
+    .about_discribtion-item{
+        width: 70%;
+        // text-align          : center;
+        // color               : dimgray;
+        font-size           : 25px;
+        line-height         : 26px;
+        // text-transform      : none;
+        font-weight         : 300;
+        margin              : 0 0 16px;
+        font-style          : italic;
+    }
