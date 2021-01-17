@@ -8,34 +8,62 @@
     width         : 100%;
     max-width     : 1400px;
 
+    h2 {
+        margin        : 1.5rem auto;
+        text-transform: uppercase;
+        color         : $primary-color;
+        font-size     : 2rem;
+        border-bottom : 2px solid $btn-color;
+        font-family   : "Halis Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight   : 700;
+    }
+
+    h3 {
+        margin     : 1.5rem auto;
+        color      : $secondary-color;
+        font-size  : 1.6rem;
+        font-family: "Halis Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+    }
+
     .projects_list {
         display       : flex;
         flex-direction: column;
         align-items   : flex-start;
 
         .projects_list-item {
-            display   : flex;
-            width     : 100%;
-            margin    : 0;
-            padding: 1rem;
+            display         : flex;
+            width           : 100%;
+            margin          : 0;
+            padding         : 1rem;
+            background-image: linear-gradient(to right, white 40%, #fad4d88a 80%, white 100%);
 
             .project {
                 display: flex;
                 width  : 100%;
             }
 
+            .project-image_container {
+                display     : flex;
+                align-items : center;
+                width       : 50%;
+                margin-right: 1rem;
+                margin-left : 1rem;
+                align-items : center;
+            }
+
             img {
-                width       : 48%;
-                margin-right: 1.5rem;
-                margin-left : 1.5rem;
+                width           : 100%;
                 // transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1.5);
                 // &:hover{
                 //     transform: scale(1.5);
                 //     width: 100%;
                 // }
             }
+
             &:nth-child(even) {
-                background-color: wheat;
+                background-image: linear-gradient(to left, white 40%, #fad4d88a 80%, white 100%);
+
                 .project {
                     flex-direction: row-reverse;
                 }
@@ -49,44 +77,49 @@
     display        : flex;
     flex-direction : column;
     justify-content: space-between;
-    align-items: center;
+    align-items    : center;
     width          : 47%;
+
     // background-color: rgb(212, 230, 210);
+    .project_about-top {
+        display       : flex;
+        flex-direction: column;
 
-    .project_about-title {
-        width : 90%;
-        margin-top: 1rem;
-        text-transform: uppercase;
-        text-align: center;
-        margin-bottom: 0;
-        line-height: 1.5;
-        font-family: "Halis Rounded","Helvetica Neue",Helvetica,Arial,sans-serif;
-        color: #2e2e2e;
-        font-size: 1.5rem;
-        font-weight: 700;
-    }
+        .project_about-title {
+            width         : 90%;
+            margin-top    : 1rem;
+            text-transform: uppercase;
+            text-align    : center;
+            margin-bottom : 0;
+            line-height   : 1.5;
+            font-family   : "Halis Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color         : $primary-color;
+            font-size     : 1.5rem;
+            font-weight   : 700;
+        }
 
-    .project_about-subtitle{
-        text-align: center;
-        font-weight: 400;
-        font-size: 1rem;
-        letter-spacing: .15em;
-        text-transform: uppercase;
-        font-family: "Proxima Nova","Helvetica Neue",Helvetica,Arial,sans-serif;
-        color: dimgray;
-        margin-bottom: 1rem;
-        line-height: 1.5;
+        .project_about-subtitle {
+            text-align    : center;
+            font-weight   : 400;
+            font-size     : 1rem;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            font-family   : "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color         : dimgray;
+            margin-bottom : 1rem;
+            line-height   : 1.5;
+        }
     }
 
     .project-link {
         color             : #fff;
-        background        :$btn-color;
+        background        : $btn-color;
         border            : 1px solid$btn-color;
         width             : 124px;
-        height: 34px;
-        margin-bottom: 0.5rem;
+        height            : 34px;
+        margin-bottom     : 0.5rem;
         display           : flex;
-        align-items: center;
+        align-items       : center;
         font-size         : 13px;
         font-family       : "Halis Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight       : 700;
@@ -95,18 +128,31 @@
         text-transform    : uppercase;
         border-radius     : 25px;
         padding           : 5px 16px 5px;
-        &:hover{
-            background: $btn_hover-color;
+
+        &:hover {
+            background  : $btn_hover-color;
             border-color: #f40903;
-            color: #fff;
+            color       : #fff;
         }
     }
-    .project_stack-list{
-        display: flex;
-        padding: 0;
-        .project_stack{
-            margin: 0.5rem;
-        }
 
+    .project-technologies {
+        display: flex;
+        align-items: center;
+        width: 95%;
+        .project_stack-list {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            .project_stack {
+                font-size: 0.8rem;
+                margin: 0.3rem;
+                border: 1px solid dimgray;
+                border-radius: 5px;
+                padding: 3px 3px 5px 3px ;
+            }
+
+        }
     }
 }

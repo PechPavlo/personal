@@ -41,7 +41,8 @@ function Projects() {
   return (
     <div>
       <section className="projects">
-        <h1>Here are some of my projects!!!</h1>
+        <h2>Featured projects</h2>
+        <h3>Below is a list of selected websites on which I had the pleasure of working.</h3>
         <ul className="projects_list">
           {projectsData && projectsData.map((project) => (
             <li
@@ -49,17 +50,24 @@ function Projects() {
               key={project.slug.current}
             >
               <div className="project">
-                <img
-                  src={project.mainImage.asset.url}
-                  alt={project.mainImage.alt}
-                />
+                <div className="project-image_container">
+                  <img
+                    src={project.mainImage.asset.url}
+                    alt={project.mainImage.alt}
+                  />
+                </div>
                 <div className="project-about">
-                  <span className="project_about-title">{project.title}</span>
-                  <span className="project_about-subtitle">{project.subTitle}</span>
+                  <div className="project_about-top">
+                    <span className="project_about-title">{project.title}</span>
+                    <span className="project_about-subtitle">{project.subTitle}</span>
+                  </div>
                   <span className="project-discrib">{project.description}</span>
-                  <ul className="project_stack-list">
-                    {project.stack.map((techn) => <li className="project_stack" key={techn.id}>{techn.title}</li>)}
-                  </ul>
+                  <div className="project-technologies">
+                    <h5>Technologies:</h5>
+                    <ul className="project_stack-list">
+                      {project.stack.map((techn) => <li className="project_stack" key={techn.id}>{techn.title}</li>)}
+                    </ul>
+                  </div>
                   <a
                     className="project-link"
                     href={project.projectUrl}
