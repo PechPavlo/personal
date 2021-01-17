@@ -1,6 +1,7 @@
 import React from 'react';
 // import sanityClient from '../../client';
 import './About.scss';
+import Footer from '../footer/Footer';
 import pavlo from '../../assets/images/Pavlo1.jpg';
 
 function About() {
@@ -52,6 +53,7 @@ function About() {
           </span>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

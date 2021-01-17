@@ -12,7 +12,7 @@ function NavBar() {
           </NavLink>
           <NavLink activeClassName="nav_link-active" className="nav_link" to="/about">About Me</NavLink>
           <NavLink activeClassName="nav_link-active" className="nav_link" to="/projects">Projects</NavLink>
-          <NavLink activeClassName="nav_link-active" className="nav_link" to="/contacts">Contacts</NavLink>
+          <NavLink activeClassName="nav_link-active" className="nav_link" to="/contacts">Contact</NavLink>
         </nav>
       </div>
     </header>

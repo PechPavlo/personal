@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import About from './components/about/About';
-import Contacts from './components/Contacts';
+import Contacts from './components/contacts/Contacts';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
 import Projects from './components/projects/Projects';

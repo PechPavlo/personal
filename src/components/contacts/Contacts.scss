@@ -1,0 +1,12 @@
+.contacts{
+    background: #292e33;
+    background-image: linear-gradient(331deg,#272c31 0%,#32383e 100%);
+    color: #6e767c;
+    min-height: calc(100vh - 10rem);
+}
+
+.contacts_body{
+    min-height: calc(100vh - 24rem);
+    max-width: 1280px;
+    margin: 0 auto;
+}
