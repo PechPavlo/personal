@@ -63,7 +63,7 @@ function Projects() {
                     <span className="project_about-subtitle">{project.subTitle}</span>
                   </div>
                   <div className="project-discrib">
-                    <BlockContent blocks={project.description} />
+                    <BlockContent blocks={project.description} projectId="wfyf00ia" dataset="production" />
                   </div>
                   <div className="project-technologies">
                     <h5>Technologies:</h5>
