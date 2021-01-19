@@ -6,7 +6,7 @@ import Footer from '../footer/Footer';
 
 function Projects() {
   const [projectsData, setProjects] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     sanityClient
       .fetch(
@@ -30,7 +30,7 @@ function Projects() {
       )
       .then((data) => {
         setProjects(data);
-        setIsLoading(false);
+        // setIsLoading(false);
       });
     // .then(() => console.log(projectsData));
     // <video src="https://traversymedia.com/downloads/videos/explore.mp4" muted loop autoPlay />

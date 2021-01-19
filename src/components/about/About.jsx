@@ -1,10 +1,11 @@
 import React from 'react';
-// import sanityClient from '../../client';
 import './About.scss';
 import Footer from '../footer/Footer';
 import pavlo from '../../assets/images/Pavlo1.jpg';
 
 function About() {
+  // import React, { useState, useEffect } from 'react';
+// import sanityClient from '../../client';
   // import React, { useState, useEffect } from 'react';
   // const [aboutData, setAbout] = useState(null);
   // useEffect(() => {

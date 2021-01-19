@@ -19,7 +19,6 @@ function Footer() {
               href="https://www.linkedin.com/in/pavlo-pechenevskyi/"
               target="_blank"
               rel="noopener noreferrer"
-              des
             >
               <LinkedInIcon />
             </a>
@@ -28,7 +27,6 @@ function Footer() {
               href="https://t.me/Pavlo_Pechenevskyi"
               target="_blank"
               rel="noopener noreferrer"
-              des
             >
               <TelegramIcon />
             </a>
@@ -37,7 +35,6 @@ function Footer() {
               href="https://www.facebook.com/profile.php?id=100000677168898"
               target="_blank"
               rel="noopener noreferrer"
-              des
             >
               <FacebookIcon />
             </a>
@@ -46,7 +43,6 @@ function Footer() {
               href="https://github.com/PechPavlo"
               target="_blank"
               rel="noopener noreferrer"
-              des
             >
               <GitHubIcon />
             </a>
@@ -57,7 +53,6 @@ function Footer() {
               href="mailto:pavlo.pechenevskyi@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              des
             >
               <MailOutlineIcon />
               pavlo.pechenevskyi@gmail.com
@@ -67,7 +62,6 @@ function Footer() {
               href="tel:+380506806838"
               target="_blank"
               rel="noopener noreferrer"
-              des
             >
               <PhoneInTalkIcon />
               +38(050)680-68-38

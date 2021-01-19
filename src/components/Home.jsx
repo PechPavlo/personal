@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.scss';
 import { NavLink } from 'react-router-dom';
-import pavlo from '../assets/images/Pavlo1.jpg';
+// import pavlo from '../assets/images/Pavlo1.jpg';
 
 function Home() {
   return (
