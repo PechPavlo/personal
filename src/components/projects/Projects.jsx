@@ -8,6 +8,10 @@ import Footer from '../footer/Footer';
 function Projects() {
   const [projectsData, setProjects] = useState(null);
   // const [isLoading, setIsLoading] = useState(true);
+  const getSortedByDate = (arr) => {
+    const sortCallBack = (a, b) => (a < b) - (a > b);
+    return arr.sort((a, b) => sortCallBack(a.publishedAt, b.publishedAt));
+  };
   useEffect(() => {
     sanityClient
       .fetch(
@@ -15,6 +19,7 @@ function Projects() {
       title,
       subTitle,
       slug,
+      publishedAt,
       mainImage{
         asset->{
           "id": _id,
@@ -30,9 +35,10 @@ function Projects() {
     }`,
       )
       .then((data) => {
-        setProjects(data);
+        setProjects(getSortedByDate(data));
         // setIsLoading(false);
       });
+    // console.log(projectsData);
     // .then(() => console.log(projectsData));
     // <video src="https://traversymedia.com/downloads/videos/explore.mp4" muted loop autoPlay />
     // <h5>{projectsData.slug.current}</h5>

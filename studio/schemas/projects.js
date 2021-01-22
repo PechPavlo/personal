@@ -55,7 +55,16 @@ export default {
     {
       name: 'publishedAt',
       title: 'Published at',
-      type: 'datetime',
+      type: 'date',
+    },
+  ],
+  orderings: [
+    {
+      title: 'Published at',
+      name: 'publishedAt',
+      by: [
+        { field: 'publishedAt', direction: 'desc' },
+      ],
     },
   ],
 
