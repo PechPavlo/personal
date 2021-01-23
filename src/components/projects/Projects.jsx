@@ -68,9 +68,7 @@ function Projects() {
                     <span className="project_about-title">{project.title}</span>
                     <span className="project_about-subtitle">{project.subTitle}</span>
                   </div>
-                  <div className="project-discrib">
-                    <BlockContent blocks={project.description} projectId="wfyf00ia" dataset="production" />
-                  </div>
+                  <BlockContent className="project-discrib" blocks={project.description} projectId="wfyf00ia" dataset="production" />
                   <div className="project-technologies">
                     <h5>Technologies:</h5>
                     <ul className="project_stack-list">

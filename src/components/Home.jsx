@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.scss';
 import { NavLink } from 'react-router-dom';
+import Footer from './footer/Footer';
 // import pavlo from '../assets/images/Pavlo1.jpg';
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
           <NavLink activeClassName="project-link" className="home_link" to="/about">read more</NavLink>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

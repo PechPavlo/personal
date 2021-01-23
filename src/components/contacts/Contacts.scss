@@ -19,12 +19,13 @@
     h2 {
         margin        : 0 auto;
         text-transform: uppercase;
-        border-bottom : 4px solid $btn-color;
+        border-bottom : 5px solid $btn-color;
         font-size     : 2rem;
     }
 
     p {
         margin: 1.5rem 0;
+        padding: 0 1.5rem;
     }
 }
 
@@ -32,6 +33,7 @@
     font-size: 1.6rem;
     color    : $btn-color;
     margin   : 1.5rem 0;
+    padding: 0 1.5rem;
 }
 
 .contact_form-wraper {
@@ -78,7 +80,7 @@
     width                : 100px;
     height               : 34px;
     margin-bottom        : 0.5rem;
-    margin-top: 2rem;
+    margin-top           : 2rem;
     display              : flex;
     justify-content      : space-around;
     align-items          : center;
@@ -96,5 +98,57 @@
         background  : $btn_hover-color;
         border-color: #f40903;
         color       : #fff;
+    }
+}
+
+@media (max-width: 1000px) {}
+
+@media (max-width: 769px) {}
+
+@media (max-width: 650px) {
+
+    #contact_form {
+
+        .contact_form-top {
+            justify-content: space-between;
+            flex-direction : column;
+            width          : 100%;
+            margin-bottom  : 2rem;
+
+            input {
+                width     : 100%;
+                margin-top: 2rem;
+            }
+        }
+    }
+    .contact_form-message {
+
+        height   : 14rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .contacts_body {
+        padding: 0.9rem;
+       font-size: 1.3rem;
+       p {
+        margin: 0.7rem 0;
+    }
+   }
+   .contact_form-wraper {
+     padding-top: 0;
+}
+    #contact_form {
+
+        .contact_form-top {
+
+            input {
+                margin-top: 1.8rem;
+            }
+        }
+    }
+    .contact_form-message {
+        font-size: 1.2rem;
     }
 }

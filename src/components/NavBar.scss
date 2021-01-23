@@ -1,37 +1,89 @@
 @import '../assets/style/colors.scss';
 
-.nav_bar-header{
-    width: 100%;
-    height: 10rem;
-    background-image: url("../assets/images/macbook.jpg");
-    background-size: cover;
+.nav_bar-header {
+    width              : 100%;
+    height             : 10rem;
+    background-image   : url("../assets/images/macbook.jpg");
+    background-size    : cover;
     background-position: center;
 }
-.nav_wrapper{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
+
+.nav_wrapper {
+    width          : 100%;
+    height         : 100%;
+    display        : flex;
+    align-items    : center;
     justify-content: flex-end;
-    nav{
-        width: 40rem;
-        display: flex;
+
+    nav {
+        width          : 40rem;
+        display        : flex;
         justify-content: space-around;
-        .nav_link{
-            color: whitesmoke;
-            font-size: 30px;
-            font-weight: 500;
+
+        .nav_link {
+            color         : whitesmoke;
+            font-size     : 30px;
+            font-weight   : 500;
             text-transform: lowercase;
-            font-family: 'Poppins', sans-serif;
-            transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1.5);
-            &:hover{
-                color: $btn_hover-color;
+            font-family   : 'Poppins', sans-serif;
+            transition    : 1.3s cubic-bezier(0.075, 0.82, 0.165, 1.5);
+
+            &:hover {
+                color    : $btn_hover-color;
                 transform: scale(1.15);
             }
         }
-        .nav_link-active{
-            color: #fd4b46;
+
+        .nav_link-active {
+            color        : #fd4b46;
             border-bottom: 3px solid $btn_hover-color;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .nav_wrapper {
+        nav {
+            width: 34rem;
+
+            .nav_link {
+                font-size: 27px;
+            }
+        }
+    }
+}
+
+@media (max-width: 769px){
+    .nav_wrapper {
+        nav {
+            width: 28rem;
+
+            .nav_link {
+                font-size: 23px;
+            }
+        }
+    }
+}
+@media (max-width: 650px){
+    .nav_wrapper {
+        justify-content: space-around;
+        nav {
+            width: 24rem;
+
+            .nav_link {
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 400px){
+    .nav_wrapper {
+        nav {
+            width: 19rem;
+
+            .nav_link {
+                font-size: 16px;
+            }
         }
     }
 }
