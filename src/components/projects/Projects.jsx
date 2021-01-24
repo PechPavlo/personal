@@ -57,6 +57,7 @@ function Projects() {
               key={project.slug.current}
             >
               <div className="project">
+                <span className="project_about-small_title">{project.title}</span>
                 <div className="project-image_container">
                   <img
                     src={project.mainImage.asset.url}
@@ -70,7 +71,7 @@ function Projects() {
                   </div>
                   <BlockContent className="project-discrib" blocks={project.description} projectId="wfyf00ia" dataset="production" />
                   <div className="project-technologies">
-                    <h5>Technologies:</h5>
+                    <h5>Tech stack:</h5>
                     <ul className="project_stack-list">
                       {project.stack.map((techn) => <li className="project_stack" key={techn.id}>{techn.title}</li>)}
                     </ul>
