@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/personal/static/css/main.941bb7c3.chunk.css",
-    "main.js": "/personal/static/js/main.d21ae6fd.chunk.js",
-    "main.js.map": "/personal/static/js/main.d21ae6fd.chunk.js.map",
+    "main.css": "/personal/static/css/main.83e39b06.chunk.css",
+    "main.js": "/personal/static/js/main.4da6e633.chunk.js",
+    "main.js.map": "/personal/static/js/main.4da6e633.chunk.js.map",
     "runtime-main.js": "/personal/static/js/runtime-main.2783daf3.js",
     "runtime-main.js.map": "/personal/static/js/runtime-main.2783daf3.js.map",
     "static/js/2.f4388fc1.chunk.js": "/personal/static/js/2.f4388fc1.chunk.js",
     "static/js/2.f4388fc1.chunk.js.map": "/personal/static/js/2.f4388fc1.chunk.js.map",
     "index.html": "/personal/index.html",
-    "static/css/main.941bb7c3.chunk.css.map": "/personal/static/css/main.941bb7c3.chunk.css.map",
+    "static/css/main.83e39b06.chunk.css.map": "/personal/static/css/main.83e39b06.chunk.css.map",
     "static/js/2.f4388fc1.chunk.js.LICENSE.txt": "/personal/static/js/2.f4388fc1.chunk.js.LICENSE.txt",
     "static/media/Pavlo1.e56cb5d3.jpg": "/personal/static/media/Pavlo1.e56cb5d3.jpg",
     "static/media/About.scss": "/personal/static/media/back_from_apple.1bdcfd4f.jpg",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.2783daf3.js",
     "static/js/2.f4388fc1.chunk.js",
-    "static/css/main.941bb7c3.chunk.css",
-    "static/js/main.d21ae6fd.chunk.js"
+    "static/css/main.83e39b06.chunk.css",
+    "static/js/main.4da6e633.chunk.js"
   ]
 }
