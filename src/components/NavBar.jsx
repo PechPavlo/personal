@@ -6,6 +6,7 @@ function NavBar() {
   return (
     <header className="nav_bar-header">
       <div className="nav_wrapper">
+        <img src="./apple-touch-icon.png" alt="logo" />
         <nav>
           <NavLink activeClassName="nav_link-active" className="nav_link" to="/" exact>
             Home

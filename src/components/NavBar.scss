@@ -13,7 +13,11 @@
     height         : 100%;
     display        : flex;
     align-items    : center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    img{
+        width: 3.3rem;
+        margin-left: 3rem;
+    }
 
     nav {
         width          : 40rem;
@@ -65,8 +69,13 @@
     }
 }
 @media (max-width: 650px){
+
     .nav_wrapper {
         justify-content: space-around;
+        img{
+            width: 2.9rem;
+            margin-left: 0;
+        }
         nav {
             width: 24rem;
 
@@ -76,8 +85,13 @@
         }
     }
 }
-@media (max-width: 400px){
+@media (max-width: 420px){
     .nav_wrapper {
+        flex-direction: column;
+        justify-content: space-evenly;
+        img{
+            width: 2.2rem;
+        }
         nav {
             width: 19rem;
 
