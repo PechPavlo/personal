@@ -1,47 +1,111 @@
-.about{
+.about {
     // background: -webkit-linear-gradient(45deg, deeppink, yellow, lime);
-    background-image : url('../../assets/images/back_from_apple.jpg');
+    background-image    : url('../../assets/images/back_from_apple.jpg');
     // background-image : linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../assets/images/basck_from_apple.jpg');
-    background-repeat: no-repeat;
-    background-size  : 100% 100%;
-    min-height: calc(100vh - 10rem);
+    background-repeat   : no-repeat;
+    background-size     : 100% 100%;
+    min-height          : calc(100vh - 10rem);
 }
-.about_img{
-    width: 400px;
+
+.about_img {
+    width        : 400px;
     border-radius: 10px;
-    margin: 3rem;
+    margin       : 0 3rem;
+}
+
+.about_wrapper {
+    display           : flex;
+    flex-direction    : column;
+    align-items       : center;
+    width             : 100%;
+    max-width         : 1280px;
+    min-height        : calc(100vh - 24rem);
+    margin            : 0 auto;
+    padding           : 2rem;
+    padding-top       : 4rem;
+    color             : ivory;
+    font-family       : "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.about_container {
+    display           : flex;
+    justify-content   : space-evenly;
+    align-items       : center;
+    width             : 100%;
+    // padding        : 2rem;
+    // padding-top    : 4rem;
+}
+
+.about_discribtion {
+    display       : flex;
+    flex-direction: column;
+    align-items   : flex-start;
+
+}
+
+h1 {
+    color           : #2e2e2e;
+    // border-bottom: 3px solid #fd4b46;
+    margin-bottom   : 1rem;
+}
+
+.about_discribtion-item {
+    width      : 95%;
+    font-size  : 24px;
+    line-height: 26px;
+    font-weight: 300;
+    margin     : 0 0 16px;
+    font-style : italic;
+}
+
+@media (max-width: 1000px) {
+
+    .about_img {
+        width: 37%;
     }
 
-    .about_container{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        max-width: 1280px;
-        min-height: calc(100vh - 24rem);
-        margin: 0 auto;
-        padding: 2rem;
-        padding-top: 4rem;
-        color: ivory;
-        font-family         : "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    .about_discribtion {
+        padding-top: 1rem;
     }
 
-    .about_discribtion{
-        display: flex;
+    .about_discribtion-item {
+        font-size  : 22px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 769px) {
+    .about_container {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (max-width: 650px) {
+    .about_discribtion-item {
+        font-size  : 18px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 450px) {
+    .about_wrapper {
+        padding-top: 1rem;
+    }
+
+    .about_container {
         flex-direction: column;
-        align-items: flex-start;
-        h1{
-            margin-bottom: 1rem;
-        }
     }
-    .about_discribtion-item{
-        width: 70%;
-        // text-align          : center;
-        // color               : dimgray;
-        font-size           : 25px;
-        line-height         : 26px;
-        // text-transform      : none;
-        font-weight         : 300;
-        margin              : 0 0 16px;
-        font-style          : italic;
+
+    .about_discribtion-item {
+        font-size: 16px;
     }
+
+    .about_img {
+        width : 71%;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+}
