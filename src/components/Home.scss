@@ -26,7 +26,7 @@
     min-height       : calc(100vh - 10rem);
     width            : 100%;
     // margin-top: 10rem;
-    padding-top      : 10rem;
+    padding-top      : 16vh;
     background-image : url('../assets/images/imac2.jpg');
     background-repeat: no-repeat;
     background-size  : cover;
@@ -99,4 +99,33 @@
             }
         }
     }
+}
+
+@media (max-width: 650px){
+    .home_container {
+        padding-top      : 11vh;
+}
+}
+@media (max-width: 425px){
+
+.home_container {
+    padding-top      : 10vh;
+
+    .home_greeting {
+
+        .home_title {
+            font-size           : 1.5rem;
+            font-weight         : 700;
+        }
+
+        .home_subtitle {
+            font-size           : 1.1rem;
+            line-height         : 26px;
+            margin              : 0 0 16px;
+            border-bottom: 2px solid $primary-color;
+        }
+        .home_link {
+        }
+    }
+}
 }
